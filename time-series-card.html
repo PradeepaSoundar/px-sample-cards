@@ -1,16 +1,16 @@
 <link rel="import" href="../polymer/polymer.html"/>
 <link rel="import" href="../px-card/px-card.html"/>
-<link rel="import" href="../px-ts-chart/px-ts-chart.html"/>
+<link rel="import" href="../px-chart/px-chart.html"/>
 
 <dom-module id="time-series-card">
   <template>
     <px-card header-text="{{context.name}}">
 
-      <px-ts-chart id="tsChart">
-        <px-ts-chart-controls data-controls show-refresh="true" show-date-range="true"></px-ts-chart-controls>
+      <px-chart id="tsChart">
+        <px-chart-controls data-controls show-refresh="true" show-date-range="true"></px-chart-controls>
         <px-chart-yaxis id="firstAxis" offset="0"></px-chart-yaxis>
         <px-chart-yaxis id="anotherAxis" opposite="true" offset="-2.5"></px-chart-yaxis>
-      </px-ts-chart>
+      </px-chart>
 
     </px-card>
   </template>
