@@ -1,13 +1,15 @@
 <link rel="import" href="../polymer/polymer.html" />
 <link rel="import" href="../px-card/px-card.html" />
-<link rel="import" href="../px-widget-cards/six-up.html"/>
+<link rel="import" href="../px-widget-cards/two-up.html"/>
 <link rel="import" href="../px-simple-bar-chart/px-simple-bar-chart.html"/>
 <link rel="import" href="../px-simple-line-chart/px-simple-line-chart.html"/>
 
 <dom-module id="widgets-card">
   <link rel="import" type="css" href="css/widgets-card.css" />
   <template>
-    <six-up widget-header="Widgets">
+
+    <two-up widget-header="Widgets">
+
       <div class=widget-1>
         <h1 class="epsilon">Output vs. Capacity</h1>
 
@@ -34,27 +36,20 @@
           line-data="{{outputCapacityData}}"
           threshold="100"
           columns="8"
-          rows="8">
+          rows="8"
+          min="1"
+          max="150"
+          min-label=""
+          max-label="">
         </px-simple-line-chart>
 
         <div>
           <small class="muted">Past 7 Days</small>
         </div>
       </div>
-      <div class=widget-2>
-        <h1 class="epsilon">Without Legend</h1>
-        <px-simple-bar-chart
-          id="without-legend"
-          chart-data="[
-                    [5,6,10,8,7,6,4,9]
-                ]">
-        </px-simple-bar-chart>
 
-        <div>
-          <small class="muted">Past 7 Days</small>
-        </div>
-      </div>
-      <div class=widget-3>
+      <div class=widget-2>
+
         <h1 class="epsilon">Open Cases</h1>
         <div class="muted">Current Count</div>
         <px-simple-bar-chart
@@ -72,7 +67,9 @@
           <small class="muted">Past 8 Weeks</small>
         </div>
       </div>
-    </six-up>
+
+    </two-up>
+
   </template>
 </dom-module>
 <script>
@@ -80,7 +77,6 @@
     is: 'widgets-card',
     behaviors: [px.card],
     ready: function() {
-//      this.openCasesLegendLabels = ['Test Label A', 'Label B', 'Label C', 'Label D', 'Label E'];
       this.outputCapacityData = [
         [1397100000000, 120],
         [1397110000000,118],
