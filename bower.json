@@ -1,6 +1,6 @@
 {
   "name": "px-sample-cards",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "main": [
     "px-sample-cards.html"
   ],
@@ -37,11 +37,9 @@
     "px-meta-buttons-design": "https://github.build.ge.com/PXd/px-meta-buttons-design.git#~0.4.3",
     "px-box-design": "https://github.build.ge.com/PXd/px-box-design.git#~0.3.7",
     "pdx-navbar": "https://github.build.ge.com/212408509/px-navbar-design.git#~0.0.1",
-    "px-clearfix-design": "https://github.build.ge.com/PXd/px-clearfix-design.git#~0.2.0",
-    "px-helpers-design": "https://github.build.ge.com/PXd/px-helpers-design.git#~0.2.4",
     "px-button-group-design": "https://github.build.ge.com/PXd/px-button-group-design.git#~0.3.5",
     "iron-component-page": "PolymerElements/iron-component-page#~v1.0.4",
-    "px-starter-kit-design": "https://github.build.ge.com/PXd/px-starter-kit-design.git#~0.4.1",
+    "px-starter-kit-design": "https://github.build.ge.com/PXd/px-starter-kit-design.git#~0.4.5",
     "px-buttons-design": "https://github.build.ge.com/PXd/px-buttons-design.git#~0.4.4",
     "px-input-group-design": "https://github.build.ge.com/PXd/px-input-group-design.git#~0.2.0",
     "px-forms-design": "https://github.build.ge.com/PXd/px-forms-design.git#~0.3.4",
