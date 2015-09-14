@@ -19,7 +19,8 @@
     "px-chart": "https://github.build.ge.com/PXc/px-chart.git#~v0.4.0",
     "px-widget-cards": "https://github.build.ge.com/PXc/px-widget-cards.git#~v0.0.5",
     "px-simple-line-chart": "https://github.build.ge.com/PXc/px-simple-line-chart.git#~v0.0.2",
-    "px-simple-bar-chart": "https://github.build.ge.com/PXc/px-simple-bar-chart.git#master"
+    "px-simple-bar-chart": "https://github.build.ge.com/PXc/px-simple-bar-chart.git#master",
+    "px-data-table": "https://github.build.ge.com/PXc/px-data-table.git#~v0.0.2"
   },
   "devDependencies": {
     "px-card": "https://github.build.ge.com/PXc/px-card.git#~0.0.7",
