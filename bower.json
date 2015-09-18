@@ -15,12 +15,12 @@
   ],
   "dependencies": {
     "polymer": "~v1.0.3",
-    "px-theme": "https://github.build.ge.com/PXc/px-theme.git#~v0.2.11",
-    "px-chart": "https://github.build.ge.com/PXc/px-chart.git#~v0.4.0",
+    "px-theme": "https://github.build.ge.com/PXc/px-theme.git#~v0.3.10",
+    "px-chart": "https://github.build.ge.com/PXc/px-chart.git#~v1.0.5",
     "px-widget-cards": "https://github.build.ge.com/PXc/px-widget-cards.git#~v1.0.0",
     "px-simple-line-chart": "https://github.build.ge.com/PXc/px-simple-line-chart.git#master",
     "px-simple-bar-chart": "https://github.build.ge.com/PXc/px-simple-bar-chart.git#master",
-    "px-data-table": "https://github.build.ge.com/PXc/px-data-table.git#~v0.0.2"
+    "px-data-table": "https://github.build.ge.com/PXc/px-data-table.git#~v0.0.3"
   },
   "devDependencies": {
     "px-card": "https://github.build.ge.com/PXc/px-card.git#~0.0.7",
