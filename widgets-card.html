@@ -1,6 +1,5 @@
 <link rel="import" href="../polymer/polymer.html" />
-<link rel="import" href="../px-card/px-card.html" />
-<link rel="import" href="../px-widget-cards/two-up.html"/>
+<link rel="import" href="../px-widget-cards/px-twoup.html"/>
 <link rel="import" href="../px-simple-bar-chart/px-simple-bar-chart.html"/>
 <link rel="import" href="../px-simple-line-chart/px-simple-line-chart.html"/>
 
@@ -8,9 +7,9 @@
   <link rel="import" type="css" href="css/widgets-card.css" />
   <template>
 
-    <two-up widget-header="Widgets">
+    <px-twoup id="sample-card-twoup" widget-header="Widgets">
 
-      <div class=widget-1>
+      <div class="widget-1">
         <h1 class="epsilon">Output vs. Capacity</h1>
 
         <div class="flex">
@@ -48,7 +47,7 @@
         </div>
       </div>
 
-      <div class=widget-2>
+      <div class="widget-2">
 
         <h1 class="epsilon">Open Cases</h1>
         <div class="muted">Current Count</div>
@@ -68,7 +67,7 @@
         </div>
       </div>
 
-    </two-up>
+    </px-twoup>
 
   </template>
 </dom-module>
