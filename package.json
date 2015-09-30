@@ -2,7 +2,7 @@
     "name": "px-sample-cards",
     "author": "General Electric",
     "description": "A Px component",
-    "version": "0.1.8",
+    "version": "0.1.9",
     "private": true,
     "fwk": "polymer1",
     "extName" : null,
