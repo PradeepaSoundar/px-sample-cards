@@ -5,22 +5,12 @@
   <link rel="import" type="css" href="css/px-sample-cards.css" />
   <template>
     <px-card header-text="{{head}}">
-      <div class="layout">
-        <p class="layout__item u-5/6 u-m++">
-          <content></content>
-        </p>
-        <p class="u-1/6 u-m++">
-          <a target="_blank" href="{{repoUrl}}" class="btn btn--large">
-            <i class="fa fa-github"></i>
-            Github Repo
-          </a>
-        </p>
+        <p>{{body}}</p>
+        <a target="_blank" href="{{repoUrl}}" class="btn btn--large">
+          <i class="fa fa-github"></i>
+          Github Repo
+        </a>
       </div>
-      <template if="{{body2}}}">
-        <div class="layout">
-          <p>{{body2}}</p>
-        </div>
-      </template>
     </px-card>
   </template>
 </dom-module>

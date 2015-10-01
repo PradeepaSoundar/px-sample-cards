@@ -99,7 +99,6 @@ module.exports = function(grunt) {
   grunt.loadNpmTasks('grunt-contrib-jshint');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-dep-serve');
-  grunt.loadNpmTasks('webdriver-support');
   grunt.loadNpmTasks('grunt-autoprefixer');
 
   // Default task.
@@ -114,12 +113,6 @@ module.exports = function(grunt) {
     grunt.task.run('default');
     grunt.task.run('depserve');
   });
-
-  // Default task.
-  grunt.registerTask('test', 'Test', [
-    'jshint',
-    'webdriver'
-  ]);
 
   grunt.registerTask('release', 'Release', [
     'clean',
