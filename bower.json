@@ -1,6 +1,6 @@
 {
   "name": "px-sample-cards",
-  "version": "0.1.11",
+  "version": "0.1.12",
   "main": [
     "px-sample-cards.html"
   ],
@@ -24,7 +24,7 @@
     "px-data-table": "https://github.com/PredixDev/px-data-table.git#v0.0.10"
   },
   "devDependencies": {
-    "px-card": "https://github.com/PredixDev/px-card.git#~0.0.7",
+    "px-card": "https://github.com/PredixDev/px-card.git#~0.1.0",
     "px-buttons-design": "https://github.com/PredixDev/px-buttons-design.git#~0.4.12",
     "px-layout-design": "https://github.com/PredixDev/px-layout-design.git#~0.3.7",
     "px-spacing-design": "https://github.com/PredixDev/px-spacing-design.git#~0.3.3",
