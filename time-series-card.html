@@ -5,7 +5,7 @@
 <dom-module id="time-series-card">
   <template>
     <px-card header-text="{{context.name}}">
-
+      <button on-click="saveBtnClicked">Save</button>
       <px-chart id="tsChart">
         <px-chart-controls data-controls show-refresh="true" show-date-range="true"></px-chart-controls>
         <px-chart-yaxis id="firstAxis" offset="0"></px-chart-yaxis>
@@ -19,6 +19,11 @@
 
   Polymer({
     is: 'time-series-card',
+    properties: {
+      config: {
+          type: Object
+      }
+    },
     init: function() {
       var self = this;
       /**
@@ -45,6 +50,21 @@
         secondSeries.axisId = "anotherAxis";
         self.$.tsChart.addSeries(secondSeries);
       });
+
+      /**
+      * on card initialization converts card config to chart widget's chartState property
+      */
+      if (this.config){
+        this.$.tsChart.set('chartState', {chartZoom: self.config, srcElement: {}});
+      }
+    },
+    saveBtnClicked: function(){
+      /**
+      * retrieve widget state from chart widget and assign it to card's config property
+      * then execute save method which will turn all card's properties to card attribute object for saving back to view service
+      */
+      this.config = this.$.tsChart.chartState.chartZoom;
+      this.save();
     },
     behaviors: [px.card]
   });
