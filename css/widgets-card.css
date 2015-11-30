@@ -238,9 +238,7 @@ html {
   /*! Comment to prevent cssmin munging this rule with html above and borking Safari */
   box-sizing: border-box; }
 
-*,
-*:before,
-*:after {
+*, *:before, *:after {
   box-sizing: inherit; }
 
 /**
@@ -252,6 +250,28 @@ html {
  * A lot of these classes carry `!important` as you will always want them to win
  * out over other selectors.
  */
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+  /**
+ * Default link colors
+ */
+  /**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */ }
+  a:link, a:visited {
+    color: #3e87e8; }
+  a:hover {
+    color: #3573c5; }
+  a:active {
+    color: #2b5ea2; }
+  a:active, a:hover {
+    outline: 0; }
+
 /**
  * Add/remove floats
  */
@@ -332,9 +352,9 @@ html {
   padding: 0 !important;
   clip: rect(0 0 0 0) !important; }
 
-.a11y.focusable:active,
-.a11y.focusable:focus,
-.visuallyhidden.focusable:active, .visuallyhidden.focusable:focus {
+.a11y.focusable:active, .a11y.focusable:focus,
+.visuallyhidden.focusable:active,
+.visuallyhidden.focusable:focus {
   position: static;
   overflow: visible;
   width: auto;
