@@ -1,6 +1,7 @@
 <link rel="import" href="../polymer/polymer.html"/>
 <link rel="import" href="../px-card/px-card.html"/>
 <link rel="import" href="../px-chart/px-chart.html"/>
+<script type="text/javascript" src="../px/dist/px.min.js"></script>
 
 <dom-module id="time-series-card">
   <template>
@@ -10,8 +11,8 @@
         <px-chart-controls data-controls show-refresh="true" show-date-range="true"></px-chart-controls>
         <px-chart-yaxis id="firstAxis" offset="0"></px-chart-yaxis>
         <px-chart-yaxis id="anotherAxis" opposite="true" offset="-2.5"></px-chart-yaxis>
+        <px-chart-series-line id="fan-vibration-cruise" axis-id="anotherAxis" data="{{first}}"></px-chart-series-line>
       </px-chart>
-
     </px-card>
   </template>
 </dom-module>
@@ -31,29 +32,41 @@
        * e.g. this.getData('http://predix-time-series-service').then(function(predixTimeSeriesData) {
        * In practice, this url will probably come through your context object.
        *
-       * you can also use the px data transformer to convert from KairosDB format to the expected timeseries data format
-       * e.g. var timeSeriesChartData = window.px.timeseries.adapter.kairosdb.transform(predixTimeSeriesData.queries);
+       * you can also use the px data transformer to convert from Predix TimeSeries data format to the expected timeseries data format
+       * e.g. var timeSeriesChartData = new px.timeseries.dataTransformer().transform(predixTimeSeriesData.tags);
        *
        * sample time series data return from time series service
        */
 
-      this.getData('/sample-data/delta-egt-cruise.json').then(function(firstSeries) {
-        firstSeries.id = 'delta-egt-cruise';
-        firstSeries.axisId = "firstAxis";
-        firstSeries.upperThreshold = "30.5";
-        firstSeries.lowerThreshold = "6.25";
-        self.$.tsChart.addSeries(firstSeries);
+      var pxTimeSeriesDataTransformer = new px.timeseries.dataTransformer();
+
+      this.getData('/sample-data/fan-vibration-cruise.json').then(function(predixTimeSeriesData) {
+
+        /**
+         * you can also add a new series by adding px-chart-series-line component to the px-chart
+         * and databind to {{secondSeries}} like the example above
+         */
+        self.first = pxTimeSeriesDataTransformer.transform(predixTimeSeriesData.tags)[0].data;
       });
 
-      this.getData('/sample-data/fan-vibration-cruise.json').then(function(secondSeries) {
-        secondSeries.id = 'fan-vibration-cruise';
-        secondSeries.axisId = "anotherAxis";
+      this.getData('/sample-data/delta-egt-cruise.json').then(function(predixTimeSeriesData) {
+
+        var secondSeries = pxTimeSeriesDataTransformer.transform(predixTimeSeriesData.tags)[0];
+
+        /**
+         * you can add series programmatically using chart's addSeries api like below
+         */
+        secondSeries.id = secondSeries.name;
+        secondSeries.axisId = "firstAxis";
+        secondSeries.upperThreshold = "30.5";
+        secondSeries.lowerThreshold = "6.25";
         self.$.tsChart.addSeries(secondSeries);
       });
 
+
       /**
-      * on card initialization converts card config to chart widget's chartState property
-      */
+       * on card initialization converts card config to chart widget's chartState property
+       */
       if (this.config){
         this.$.tsChart.set('chartState', {chartZoom: self.config, srcElement: {}});
       }
