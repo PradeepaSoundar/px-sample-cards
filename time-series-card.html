@@ -11,7 +11,6 @@
         <px-chart-controls data-controls show-refresh="true" show-date-range="true"></px-chart-controls>
         <px-chart-yaxis id="firstAxis" offset="0"></px-chart-yaxis>
         <px-chart-yaxis id="anotherAxis" opposite="true" offset="-2.5"></px-chart-yaxis>
-        <px-chart-series-line id="fan-vibration-cruise" axis-id="anotherAxis" data="{{first}}"></px-chart-series-line>
       </px-chart>
     </px-card>
   </template>
@@ -33,7 +32,20 @@
        * In practice, this url will probably come through your context object.
        *
        * you can also use the px data transformer to convert from Predix TimeSeries data format to the expected timeseries data format
-       * e.g. var timeSeriesChartData = new px.timeseries.dataTransformer().transform(predixTimeSeriesData.tags);
+       * e.g.
+       *
+       * var timeSeriesChartData = new px.timeseries.dataTransformer().transform(predixTimeSeriesData.tags);
+       *
+       * or with option
+       *
+       * var timeSeriesDataTransformer = new px.timeseries.dataTransformer({
+       *    //function to customize the series name return by data transformer
+       *    getSeriesName: function (tagname, groups) {
+       *             return tagname + "_timeseries_group_name";
+       *         }
+       * });
+       *
+       * var timeSeriesChartData = timeSeriesDataTransformer.transform(predixTimeSeriesData.tags);
        *
        * sample time series data return from time series service
        */
@@ -42,20 +54,15 @@
 
       this.getData('/sample-data/fan-vibration-cruise.json').then(function(predixTimeSeriesData) {
 
-        /**
-         * you can also add a new series by adding px-chart-series-line component to the px-chart
-         * and databind to {{secondSeries}} like the example above
-         */
-        self.first = pxTimeSeriesDataTransformer.transform(predixTimeSeriesData.tags)[0].data;
+        var firstSeries = pxTimeSeriesDataTransformer.transform(predixTimeSeriesData.tags)[0];
+        firstSeries.id = firstSeries.name;
+        firstSeries.axisId = 'anotherAxis';
+        self.$.tsChart.addSeries(firstSeries);
       });
 
       this.getData('/sample-data/delta-egt-cruise.json').then(function(predixTimeSeriesData) {
 
         var secondSeries = pxTimeSeriesDataTransformer.transform(predixTimeSeriesData.tags)[0];
-
-        /**
-         * you can add series programmatically using chart's addSeries api like below
-         */
         secondSeries.id = secondSeries.name;
         secondSeries.axisId = "firstAxis";
         secondSeries.upperThreshold = "30.5";
