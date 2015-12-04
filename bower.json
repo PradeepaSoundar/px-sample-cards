@@ -1,6 +1,6 @@
 {
   "name": "px-sample-cards",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "main": [
     "px-sample-cards.html"
   ],
@@ -21,7 +21,7 @@
     "px-widget-cards": "https://github.com/PredixDev/px-widget-cards.git#v1.1.0",
     "px-simple-line-chart": "https://github.com/PredixDev/px-simple-line-chart.git#v1.2.1",
     "px-simple-bar-chart": "https://github.com/PredixDev/px-simple-bar-chart.git#v1.1.1",
-    "px-data-table": "https://github.com/PredixDev/px-data-table.git#v0.2.0",
+    "px-data-table": "https://github.com/PredixDev/px-data-table.git#v0.3.0",
     "px": "https://github.com/PredixDev/px.git#~v1.3.0",
     "px-card": "https://github.com/PredixDev/px-card.git#~0.2.0"
   },
@@ -35,5 +35,14 @@
     "px-starter-kit-design": "https://github.com/PredixDev/px-starter-kit-design.git#~0.4.5",
     "px-toggle-design": "https://github.com/PredixDev/px-toggle-design.git#~0.2.6",
     "px-headings-design": "https://github.com/PredixDev/px-headings-design.git#~0.2.8"
+  },
+  "resolutions": {
+    "polymer": "~v1.2.3",
+    "px": "~v1.3.0",
+    "es6-promise": "~3.0.2",
+    "iron-ajax": "~1.1.1",
+    "px-rangepicker": "~v0.1.0",
+    "px-theme": "v0.4.0",
+    "px-card": "~0.2.0"
   }
 }

@@ -56,24 +56,25 @@
        * Data end point url can be passed from context property, therefore time seires card can display data data base on context object
        * that is passed into time series card.
        * */
-      this.getData(this.context.urls['core-vibe-rear-cruise']).then(function(predixTimeSeriesData) {
+       if (this.context.urls && this.context.urls['core-vibe-rear-cruise']) {
+         this.getData(this.context.urls['core-vibe-rear-cruise']).then(function (predixTimeSeriesData) {
+           var firstSeries = pxTimeSeriesDataTransformer.transform(predixTimeSeriesData.tags)[0];
+           firstSeries.id = firstSeries.name;
+           firstSeries.axisId = 'anotherAxis';
+           self.$.tsChart.addSeries(firstSeries);
+         });
+       }
 
-        var firstSeries = pxTimeSeriesDataTransformer.transform(predixTimeSeriesData.tags)[0];
-        firstSeries.id = firstSeries.name;
-        firstSeries.axisId = 'anotherAxis';
-        self.$.tsChart.addSeries(firstSeries);
-      });
-
-      this.getData(this.context.urls['delta-egt-cruise']).then(function(predixTimeSeriesData) {
-
-        var secondSeries = pxTimeSeriesDataTransformer.transform(predixTimeSeriesData.tags)[0];
-        secondSeries.id = secondSeries.name;
-        secondSeries.axisId = "firstAxis";
-        secondSeries.upperThreshold = "30.5";
-        secondSeries.lowerThreshold = "6.25";
-        self.$.tsChart.addSeries(secondSeries);
-      });
-
+      if (this.context.urls && this.context.urls['delta-egt-cruise']) {
+        this.getData(this.context.urls['delta-egt-cruise']).then(function (predixTimeSeriesData) {
+          var secondSeries = pxTimeSeriesDataTransformer.transform(predixTimeSeriesData.tags)[0];
+          secondSeries.id = secondSeries.name;
+          secondSeries.axisId = "firstAxis";
+          secondSeries.upperThreshold = "30.5";
+          secondSeries.lowerThreshold = "6.25";
+          self.$.tsChart.addSeries(secondSeries);
+        });
+      }
 
       /**
        * on card initialization converts card config to chart widget's chartState property
