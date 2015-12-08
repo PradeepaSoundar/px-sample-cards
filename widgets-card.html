@@ -1,12 +1,13 @@
 <link rel="import" href="../polymer/polymer.html"/>
 <link rel="import" href="../px-widget-cards/px-twoup.html"/>
+<link rel="import" href="../px-widget-cards/px-threeup.html"/>
 <link rel="import" href="../px-simple-bar-chart/px-simple-bar-chart.html"/>
 <link rel="import" href="../px-simple-line-chart/px-simple-line-chart.html"/>
 
 <dom-module id="widgets-card">
     <link rel="import" type="css" href="css/widgets-card.css"/>
     <template>
-        <px-twoup id="sample-card-twoup" widget-header="Widgets">
+        <!--px-twoup id="sample-card-twoup" widget-header="Widgets">
             <div class="widget-1">
                 <h1 class="epsilon">Output vs. Capacity</h1>
                 <div class="flex">
@@ -59,7 +60,82 @@
                 </div>
             </div>
 
-        </px-twoup>
+
+        </px-twoup-->
+
+        <px-threeup id="sample-card-threeup" widget-header="Widgets">
+            <div class="widget-1">
+                <h1 class="epsilon">Output vs. Capacity</h1>
+                <div class="flex">
+                    <div class="flex">
+                        <div class="large-value">987</div>
+                        <div class="flex flex--col u-ml-">
+                            <small class="caps">Output</small>
+                            <small class="caps muted">mw</small>
+                        </div>
+                    </div>
+
+                    <div class="u-ml+ flex">
+                        <div class="large-value">1010</div>
+                        <div class="flex flex--col u-ml-">
+                            <small class="caps">Capacity</small>
+                            <small class="caps muted">mw</small>
+                        </div>
+                    </div>
+                </div>
+
+                <px-simple-line-chart
+                        id="demo-line-chart"
+                        line-data="{{outputCapacityData}}"
+                        threshold="100"
+                        columns="8"
+                        rows="8"
+                        min="1"
+                        max="150"
+                        min-label="false"
+                        max-label="false">
+                </px-simple-line-chart>
+
+                <div>
+                    <small class="muted">Past 7 Days</small>
+                </div>
+            </div>
+
+            <div class="widget-2">
+
+                <h1 class="epsilon">Open Legend</h1>
+
+                <!--div class="muted">Current Count</div-->
+                <px-simple-bar-chart
+                        id="open-cases"
+                        width="auto"
+                        chart-data="{{openLegendData}}">
+                </px-simple-bar-chart>
+
+                <div>
+                    <small class="muted">Past 7 Days</small>
+                </div>
+            </div>
+
+            <div class="widget-3">
+
+                <h1 class="epsilon">Open Cases</h1>
+
+                <div class="muted">Current Count</div>
+                <px-simple-bar-chart
+                        id="open-cases"
+                        width="auto"
+                        chart-data="{{openCasesData}}">
+                </px-simple-bar-chart>
+
+                <div>
+                    <small class="muted">Past 8 Weeks</small>
+                </div>
+            </div>
+
+        </px-threeup>
+
+
     </template>
 </dom-module>
 <script>
