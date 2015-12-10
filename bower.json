@@ -1,6 +1,6 @@
 {
   "name": "px-sample-cards",
-  "version": "0.2.5",
+  "version": "0.2.6",
   "main": [
     "px-sample-cards.html"
   ],
@@ -16,7 +16,7 @@
   "dependencies": {
     "polymer": "~v1.2.3",
     "px-theme": "https://github.com/PredixDev/px-theme.git#v0.4.0",
-    "px-chart": "https://github.com/PredixDev/px-chart.git#v1.1.0",
+    "px-chart": "https://github.com/PredixDev/px-chart.git#v1.1.1",
     "px-rangepicker": "https://github.com/PredixDev/px-rangepicker.git#~v0.1.2",
     "px-widget-cards": "https://github.com/PredixDev/px-widget-cards.git#v1.2.3",
     "px-simple-line-chart": "https://github.com/PredixDev/px-simple-line-chart.git#v1.2.1",
