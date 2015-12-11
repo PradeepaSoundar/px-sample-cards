@@ -24,7 +24,10 @@
           type: Object
       }
     },
-    init: function() {
+    init: function(){
+      this.drawData();
+    },
+    drawData: function() {
       var self = this;
       /**
        * use the card's getData API method to fetch data, then pass that data into our time series widget
@@ -82,6 +85,9 @@
       if (this.config){
         this.$.tsChart.set('chartState', {chartZoom: self.config, srcElement: {}});
       }
+    },
+    contextChanged: function(){
+      this.drawData();
     },
     saveBtnClicked: function(){
       /**
