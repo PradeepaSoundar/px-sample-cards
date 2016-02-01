@@ -1,3 +1,3 @@
-v0.0.1
+v0.2.12
 ==================
-* Initial release
+* updated px-rangepicker to point to v0.1.4
