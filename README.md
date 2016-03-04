@@ -58,15 +58,15 @@ Second, import the cards/decks to your application with tags in your head like t
 
 ```
 <!-- The px javascript library & px-deck are needed for using px-deck -->
-<script type='application/javascript' src='bower_components/px/dist/px.min.js'></script>
+<script type='application/javascript' src='../px/dist/px.min.js'></script>
 <link rel="import" href="../px-card/px-deck.html"/>
 <!-- or -->
-<link rel="import" href="bower_components/px-card/px-dashboard.html"/>
-<link rel="import" href="bower_components/px-card/px-deck.html"/>
+<link rel="import" href="../px-card/px-dashboard.html"/>
+<link rel="import" href="../px-card/px-deck.html"/>
 
-<link rel="import" href="/bower_components/px-sample-cards/gist-card.html"/>
-<link rel="import" href="/bower_components/px-sample-cards/datagrid-card.html"/>
-<link rel="import" href="bower_components/px-sample-cards/sample-deck.html"/>
+<link rel="import" href="../px-sample-cards/gist-card.html"/>
+<link rel="import" href="../px-sample-cards/datagrid-card.html"/>
+<link rel="import" href="../px-sample-cards/sample-deck.html"/>
 ```
 
 Finally, use the cards/decks in your application, either by:

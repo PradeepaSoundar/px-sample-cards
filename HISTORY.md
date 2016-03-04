@@ -1,3 +1,7 @@
+v0.2.17
+================
+* removed bower_components from links
+
 v0.2.16
 ================
 * Updated License
