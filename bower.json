@@ -15,7 +15,7 @@
   ],
   "dependencies": {
     "polymer": "~v1.2.3",
-    "px-theme": "https://github.com/PredixDev/px-theme.git#v0.6.1",
+    "px-theme": "https://github.com/PredixDev/px-theme.git#v0.6.5",
     "px-chart": "https://github.com/PredixDev/px-chart.git#v1.1.5",
     "px-rangepicker": "https://github.com/PredixDev/px-rangepicker.git#~v0.1.4",
     "px-widget-cards": "https://github.com/PredixDev/px-widget-cards.git#v1.2.6",
@@ -42,7 +42,7 @@
     "es6-promise": "~3.0.2",
     "iron-ajax": "~1.1.1",
     "px-rangepicker": "~v0.1.0",
-    "px-theme": "v0.6.1",
+    "px-theme": "v0.6.5",
     "px-card": "~0.2.3"
   }
 }
