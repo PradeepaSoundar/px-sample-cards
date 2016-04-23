@@ -1068,7 +1068,7 @@ a {
         -ms-flex: none !important;
             flex: none !important; } }
 
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 100%) {
   .u-1\/1-desk-wide {
     width: 100% !important; }
   .u-1\/2-desk-wide {

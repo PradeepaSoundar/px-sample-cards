@@ -894,7 +894,7 @@ button.btn {
         -webkit-flex-basis: 30rem;
             -ms-flex-preferred-size: 30rem;
                 flex-basis: 30rem; }
-        @media screen and (min-width: 80rem) {
+        @media screen and (min-width: 100%) {
           .layout > .layout__item:nth-last-child(-n+4):first-child,
           .layout > .layout__item:nth-last-child(-n+4):first-child ~ .layout__item {
             -webkit-flex-basis: 0;
@@ -905,13 +905,13 @@ button.btn {
         -webkit-flex-basis: 40rem;
             -ms-flex-preferred-size: 40rem;
                 flex-basis: 40rem; }
-        @media screen and (min-width: 80rem) {
+        @media screen and (min-width: 100%) {
           .layout > .layout__item:nth-last-child(-n+3):first-child,
           .layout > .layout__item:nth-last-child(-n+3):first-child ~ .layout__item {
             -webkit-flex-basis: 0;
                 -ms-flex-preferred-size: 0;
                     flex-basis: 0; } }
-      @media screen and (min-width: 80rem) {
+      @media screen and (min-width: 100%) {
         .layout > .layout__item {
           -webkit-flex-basis: 0;
               -ms-flex-preferred-size: 0;
@@ -1508,7 +1508,7 @@ button.btn {
         -ms-flex: none !important;
             flex: none !important; } }
 
-@media screen and (min-width: 80rem) {
+@media screen and (min-width: 100%) {
   .u-1\/1-desk-wide {
     width: 100% !important; }
   .u-1\/2-desk-wide {
