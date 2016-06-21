@@ -1,5 +1,9 @@
 v0.4.1
 ================
+* Update to Polymer 1.5 and uprev dependent modules
+
+v0.4.1
+================
 * added oss_notice to bower ignore
 
 v0.4.0

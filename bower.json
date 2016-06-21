@@ -15,19 +15,19 @@
     "OSS_Notice.pdf"
   ],
   "dependencies": {
-    "polymer": "~v1.4.0",
-    "px-theme": "https://github.com/PredixDev/px-theme.git#v0.7.0",
-    "px-chart": "https://github.com/PredixDev/px-chart.git#v1.5.0",
-    "px-rangepicker": "https://github.com/PredixDev/px-rangepicker.git#~v0.3.0",
-    "px-widget-cards": "https://github.com/PredixDev/px-widget-cards.git#v1.3.0",
-    "px-simple-line-chart": "https://github.com/PredixDev/px-simple-line-chart.git#v1.3.0",
-    "px-simple-bar-chart": "https://github.com/PredixDev/px-simple-bar-chart.git#v1.3.0",
-    "px-data-table": "https://github.com/PredixDev/px-data-table.git#v1.8.0",
-    "px": "https://github.com/PredixDev/px.git#~v1.3.0",
-    "px-card": "https://github.com/PredixDev/px-card.git#~0.3.0"
+    "polymer": "^v1.5.0",
+    "px-theme": "https://github.com/PredixDev/px-theme.git#v0.8.0",
+    "px-chart": "https://github.com/PredixDev/px-chart.git#v1.6.0",
+    "px-rangepicker": "https://github.com/PredixDev/px-rangepicker.git#~v0.4.0",
+    "px-widget-cards": "https://github.com/PredixDev/px-widget-cards.git#v1.4.0",
+    "px-simple-line-chart": "https://github.com/PredixDev/px-simple-line-chart.git#v1.4.0",
+    "px-simple-bar-chart": "https://github.com/PredixDev/px-simple-bar-chart.git#v1.5.1",
+    "px-data-table": "https://github.com/PredixDev/px-data-table.git#v1.11.1",
+    "px": "https://github.com/PredixDev/px.git#~v1.4.2",
+    "px-card": "https://github.com/PredixDev/px-card.git#~0.4.2"
   },
   "devDependencies": {
-    "px-buttons-design": "https://github.com/PredixDev/px-buttons-design.git#~0.4.12",
+    "px-buttons-design": "https://github.com/PredixDev/px-buttons-design.git#~0.4.23",
     "px-layout-design": "https://github.com/PredixDev/px-layout-design.git#~0.3.7",
     "px-spacing-design": "https://github.com/PredixDev/px-spacing-design.git#~0.3.3",
     "px-forms-design": "https://github.com/PredixDev/px-forms-design.git#~0.3.9",
@@ -38,7 +38,6 @@
     "px-headings-design": "https://github.com/PredixDev/px-headings-design.git#~0.2.8"
   },
   "resolutions": {
-    "px": "~v1.3.0",
     "es6-promise": "~3.0.2"
   }
 }
