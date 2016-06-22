@@ -1,3 +1,7 @@
+v0.5.1
+================
+* Uprade deps for px-sample-card to pick up latest.
+
 v0.5.0
 ================
 * Upgrade to Polymer 1.5.0
