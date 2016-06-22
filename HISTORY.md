@@ -1,3 +1,7 @@
+v0.5.0
+================
+* Upgrade to Polymer 1.5.0
+
 v0.4.1
 ================
 * Update to Polymer 1.5 and uprev dependent modules
