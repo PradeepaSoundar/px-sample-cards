@@ -90,9 +90,19 @@ module.exports = function(grunt) {
       local: {
         webdrivers: ['chrome']
       }
+    },
+
+    bump: {
+      options:{
+        files: ['bower.json', 'package.json'],
+        updateConfigs: [],
+        commitFiles: ['package.json', 'bower.json'],
+        push: false
+      }
     }
   });
 
+  grunt.loadNpmTasks('grunt-bump');
   grunt.loadNpmTasks('grunt-sass');
   grunt.loadNpmTasks('grunt-shell');
   grunt.loadNpmTasks('grunt-contrib-clean');
