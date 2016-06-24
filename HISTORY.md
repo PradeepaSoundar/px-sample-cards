@@ -1,6 +1,10 @@
+v0.5.2
+===============
+* Remove ES6-promise bower resolution
+
 v0.5.1
 ================
-* Uprade deps for px-sample-card to pick up latest.
+* Upgrade deps for px-sample-card to pick up latest.
 
 v0.5.0
 ================
