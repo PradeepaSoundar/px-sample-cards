@@ -1,3 +1,7 @@
+v0.5.3
+===============
+* Added demo link to README
+
 v0.5.2
 ===============
 * Remove ES6-promise bower resolution
