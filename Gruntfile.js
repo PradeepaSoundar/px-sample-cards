@@ -30,7 +30,8 @@ module.exports = function(grunt) {
       dist: {
         files: {
           'css/noprefix/px-sample-cards.css': 'sass/px-sample-cards-predix.scss',
-          'css/noprefix/widgets-card.css': 'sass/widgets-card-predix.scss'
+          'css/noprefix/widgets-card.css': 'sass/widgets-card-predix.scss',
+          'css/noprefix/px-sample-cards-demo.css': 'sass/px-sample-cards-demo.scss'
         }
       }
     },
