@@ -1,6 +1,6 @@
 v0.5.4
 ===============
-* Updated demo styles
+* Added demo css file
 
 v0.5.3
 ===============
