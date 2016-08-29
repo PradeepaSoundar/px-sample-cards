@@ -1,3 +1,7 @@
+v0.5.4
+===============
+* Updated demo styles
+
 v0.5.3
 ===============
 * Added demo link to README

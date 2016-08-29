@@ -28,59 +28,77 @@
         <link rel="import" href="time-series-card.html"/>
         <link rel="import" href="card-to-card.html"/>
         <link rel="import" href="sample-card2.html"/>
+        <style media="screen">
+            .demo{
+              background: #8A8C8E;
+            }
+            .demo__title{
+              color: #FFFFFF;
+              font-family: "GE Inspira Sans", sans-serif;
+              font-weight: 400;
+            }
+        </style>
     </head>
 
-    <body>
+    <body class="demo">
         <!--
             Note: most demos are static content, so don't use anything from the context.
             In practice, your content is likely coming from the context, which is passed in manually
             through px-deck or px-dashboard.
         -->
 
-        <h2>demo-card</h2>
+        <h2 class="demo__title">Demo-card</h2>
         <px-deck context="{{context}}">
             <demo-card id="1"></demo-card>
         </px-deck>
+        <br/>
 
-        <h2>blank-card and gist-card</h2>
+        <h2 class="demo__title">Blank-card and gist-card</h2>
         <px-deck context="{{context}}">
             <blank-card id="2"></blank-card>
             <gist-card id="3"></gist-card>
         </px-deck>
+        <br/>
 
-        <h2>datagrid-card</h2>
+        <h2 class="demo__title">Datagrid-card</h2>
         <px-deck context="{{context}}">
             <datagrid-card id="4"></datagrid-card>
         </px-deck>
+        <br/>
 
-        <h2>toggle-card and hide-card</h2>
+        <h2 class="demo__title">Toggle-card and hide-card</h2>
         <px-deck context="{{context}}">
             <toggle-card id="5"></toggle-card>
             <hide-card id="hide-card"></hide-card>
         </px-deck>
+        <br/>
 
-        <h2>description-card</h2>
+        <h2 class="demo__title">Description-card</h2>
         <px-deck context="{{context}}">
             <description-card id="7" head="The description" repo-url="http://github.com" body=" Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed quis placerat dolor. Ut pretium purus sit amet justo accumsan dignissim. Sed at libero cursus, venenatis purus vel, hendrerit libero. Pellentesque posuere lobortis elit quis pharetra. Sed ut tincidunt libero, eget cursus neque. Maecenas non mauris nec nibh ornare tristique. Sed facilisis sapien in lorem dapibus, ut bibendum nulla gravida."></description-card>
         </px-deck>
+        <br/>
 
-        <h2>widgets-card</h2>
+        <h2 class="demo__title">Widgets-card</h2>
         <px-deck context="{{context}}">
             <widgets-card id="6"></widgets-card>
         </px-deck>
+        <br/>
 
-        <h2>temperature-card and widget-to-widget card</h2>
+        <h2 class="demo__title">Temperature-card and widget-to-widget card</h2>
         <px-deck context="{{context}}">
             <temperature-card id="10"></temperature-card>
             <widget-to-widget-card id="11"></widget-to-widget-card>
         </px-deck>
+        <br/>
 
 
-        <h2>Card to card communication</h2>
+        <h2 class="demo__title">Card to card communication</h2>
         <px-deck context="{{context}}">
             <card-to-card id="12"></card-to-card>
             <card-to-card id="13"></card-to-card>
         </px-deck>
+        <br/>
         <px-deck context="{{context}}">
             <sample-card2 id="14"></sample-card2>
             <sample-card2 id="15"></sample-card2>
