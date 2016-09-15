@@ -1,9 +1,12 @@
 <link href="../polymer/polymer.html" rel="import"/>
 <link href="../px-card/px-card.html" rel="import"/>
 
+<link rel="import" href="css/px-sample-cards-styles.html">
+
 <dom-module id="description-card">
-  <link rel="import" type="css" href="css/px-sample-cards.css" />
   <template>
+    <style include="px-sample-cards-styles"></style>
+    <style include="px-theme-styles"></style>
     <px-card header-text="{{head}}">
         <p>{{body}}</p>
         <a target="_blank" href="{{repoUrl}}" class="btn btn--large">

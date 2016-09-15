@@ -1,8 +1,9 @@
 <link rel="import" href="../polymer/polymer.html"/>
 <link rel="import" href="../px-card/px-card.html"/>
 
+<link rel="import" href="css/px-sample-cards-styles.html">
+
 <dom-module id="fetch-data-card">
-  <link rel="import" type="css" href="css/px-sample-cards.css" />
   <style>
     .temp--box {
       border: 1px solid #d1d0d8;
@@ -31,6 +32,8 @@
     }
   </style>
   <template>
+    <style include="px-sample-cards-styles"></style>
+    <style include="px-theme-styles"></style>
     <px-card header-text="Fetching Data">
       <p>This temperature display control shows how your card can connect to an external data
 source. For example, with time series data, you can display data points from wherever your data is stored, which provides your application with real world value. See the instructions in the code comments for fetching data.</p>

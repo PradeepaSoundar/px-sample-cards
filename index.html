@@ -8,9 +8,10 @@
         <!-- Requires Webcomponents.js polyfill is provided by the page for browsers that don't support html imports -->
         <script src="../webcomponentsjs/webcomponents-lite.min.js"></script>
 
-        <!-- Import custom element. Note: see comment about relative paths to dependencies in the *.html file referenced below -->
-        <link rel="import" href="../px-theme/px-theme.html"/>
+        <link rel="import" href="../px-theme/px-theme-styles.html">
+        <style include="px-theme-styles" is="custom-style"></style>
 
+        <!-- Import custom element. Note: see comment about relative paths to dependencies in the *.html file referenced below -->
         <!-- The px javascript library & px-deck are needed for using px-deck -->
         <script type='application/javascript' src='../px/dist/px.min.js'></script>
         <link rel="import" href="../px-card/px-deck.html"/>

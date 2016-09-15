@@ -1,8 +1,11 @@
 <link rel="import" href="../polymer/polymer.html" />
 
+<link rel="import" href="css/px-sample-cards-styles.html">
+
 <dom-module id="px-widget-a">
-  <link rel="import" type="css" href="css/px-sample-cards.css" />
   <template>
+    <style include="px-sample-cards-styles"></style>
+    <style include="px-theme-styles"></style>
     <h3>Widget A</h3>
     <div class="input-group">
       <input class="text-input input--regular" type="text" value="{{text::input}}">

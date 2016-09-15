@@ -15,29 +15,29 @@
     "OSS_Notice.pdf"
   ],
   "dependencies": {
-    "polymer": "^v1.5.0",
-    "px-theme": "https://github.com/PredixDev/px-theme.git#v0.8.0",
-    "px-chart": "https://github.com/PredixDev/px-chart.git#v1.6.0",
-    "px-rangepicker": "https://github.com/PredixDev/px-rangepicker.git#~v0.4.0",
-    "px-widget-cards": "https://github.com/PredixDev/px-widget-cards.git#v1.4.0",
-    "px-simple-line-chart": "https://github.com/PredixDev/px-simple-line-chart.git#v1.4.0",
-    "px-simple-bar-chart": "https://github.com/PredixDev/px-simple-bar-chart.git#v1.5.1",
-    "px-data-table": "https://github.com/PredixDev/px-data-table.git#v1.11.1",
-    "px": "https://github.com/PredixDev/px.git#~v1.4.2",
-    "px-card": "https://github.com/PredixDev/px-card.git#~0.4.2"
+    "polymer": "^1.6.1",
+    "px-theme": "~1.1.2",
+    "px-chart": "~1.7.0",
+    "px-rangepicker": "~1.2.1",
+    "px-widget-cards": "~2.1.0",
+    "px-simple-line-chart": "~1.5.0",
+    "px-simple-bar-chart": "~1.6.0",
+    "px-data-table": "~1.13.3",
+    "px": "~1.4.3",
+    "px-card": "~0.5.2"
   },
   "devDependencies": {
-    "px-buttons-design": "https://github.com/PredixDev/px-buttons-design.git#~0.4.23",
-    "px-layout-design": "https://github.com/PredixDev/px-layout-design.git#~0.3.7",
-    "px-spacing-design": "https://github.com/PredixDev/px-spacing-design.git#~0.3.3",
-    "px-forms-design": "https://github.com/PredixDev/px-forms-design.git#~0.3.9",
-    "px-input-group-design": "https://github.com/PredixDev/px-input-group-design.git#~0.2.7",
-    "px-defaults-design": "https://github.com/PredixDev/px-defaults-design.git#~0.2.4",
-    "px-starter-kit-design": "https://github.com/PredixDev/px-starter-kit-design.git#~0.5.0",
-    "px-toggle-design": "https://github.com/PredixDev/px-toggle-design.git#~0.2.6",
-    "px-headings-design": "^0.2.14",
-    "px-code-design": "^0.2.11",
-    "px-actionable-text-icons-design": "^0.0.3",
-    "px-list-inline-design": "^0.2.11"
+    "px-buttons-design": "~0.4.26",
+    "px-layout-design": "~0.3.13",
+    "px-spacing-design": "~0.3.8",
+    "px-forms-design": "~0.3.17",
+    "px-input-group-design": "~0.2.12",
+    "px-defaults-design": "~0.2.9",
+    "px-starter-kit-design": "~0.6.0",
+    "px-toggle-design": "~0.2.12",
+    "px-headings-design": "~0.2.14",
+    "px-code-design": "~0.2.11",
+    "px-actionable-text-icons-design": "~0.0.3",
+    "px-list-inline-design": "~0.2.11"
   }
 }
