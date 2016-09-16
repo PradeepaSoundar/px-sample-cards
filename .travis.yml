@@ -2,18 +2,21 @@ sudo: required
 dist: trusty
 language: node_js
 node_js:
-  - stable
+- stable
 branches:
   except:
-    - gh-pages
+  - gh-pages
 before_script:
-  - npm install bower
-  - 'export PATH=$PWD/node_modules/.bin:$PATH'
-  - bower install
+- npm install bower
+- export PATH=$PWD/node_modules/.bin:$PATH
+- bower install
 script:
-  - >-
-    if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then openssl aes-256-cbc -k
-    "$password" -in id_rsa.enc -out deploy_key -d; fi
-  - cd $TRAVIS_BUILD_DIR/scripts
-  - chmod 755 ghp.sh
-  - ./ghp.sh
+- if [ "${TRAVIS_PULL_REQUEST}" = "false" ]; then openssl aes-256-cbc -k "$password"
+  -in id_rsa.enc -out deploy_key -d; fi
+- cd $TRAVIS_BUILD_DIR/scripts
+- chmod 755 ghp.sh
+- ./ghp.sh
+env:
+  global:
+    secure: xnHaLMZ+IalaUIjHVBl8ZoksaCAtcfZmqx7NTakNQSp3apzPf7Y6rGvmW6x1d1zyAscigtedkNoQCH5uaGRi9APGKQLTR6Xgcoac54NBX7MKKI7G1G7ObKRsFcoh5jVVERAjMCO6Tdi1qmbaZgVxAga4v4a94/IyF0QfttYf2wwEmyrCUBNunrkJ1D5lV93sH/ORM4gBUNl1AQpCxONDBjGCGEK43Wlqio7KeVwzizAqlqxc045aInEJkxwt+5HctxsZ2jXitNI96D/iVN33INik5RjICMxprc7JwYdpgKoPV7cNhZtbIT7Ra6rZLwwf4Zj1XbhghkL9M61VN59V27Zt/jZQPlU3QiSGK+iLj9g4pO0QV7dlNHQOK4DcIQhfA7/u9WePH1EB3wT7CYID9EqVp/TxgPekqGn4kqAX8v7biIWZScURLeAVs6+LiCSX7IfSD+d0ui0tFHWegcqfu791HbVqjSbg9PufhcvcLaZ3tbPD1xNuIaU35HYGNRnT1Pxd90kFskZ1isPkbQq999+KcgU0LntiASEqJ3l0TpRFhdiCGgrVDfvMeViWaqAeU1dePb2Fcpxvmh565DcF+wIaPDU5Qy2u/cMlXurVQY5tUMNvEXsN40hM44QboE/xH4PLsZOofARVauy4eLUh4wul8dwG9mUIdfp5jD10bFU=
+
