@@ -1,3 +1,7 @@
+v0.6.1
+===============
+* Updated dependencies
+
 v0.5.4
 ===============
 * Added demo css file
