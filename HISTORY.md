@@ -1,3 +1,7 @@
+v0.6.2
+===============
+* Update dependencies
+
 v0.6.1
 ===============
 * Updated dependencies
