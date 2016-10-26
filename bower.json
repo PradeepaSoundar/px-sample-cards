@@ -1,6 +1,6 @@
 {
   "name": "px-sample-cards",
-  "version": "0.6.2",
+  "version": "0.6.3",
   "main": [
     "px-sample-cards.html"
   ],
@@ -37,7 +37,7 @@
     "px-toggle-design": "~0.2.12",
     "px-headings-design": "~0.2.14",
     "px-code-design": "~0.2.11",
-    "px-actionable-text-icons-design": "~0.1.0",
+    "px-actionable-text-icons-design": "^0.1.0",
     "px-list-inline-design": "~0.2.11"
   }
 }
