@@ -1,3 +1,8 @@
+
+v0.6.4
+==================
+* changing Gruntfile.js to gulpfile.js
+
 v0.6.3
 ===============
 * Update dependencies
