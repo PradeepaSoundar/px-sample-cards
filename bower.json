@@ -1,6 +1,6 @@
 {
     "name": "px-sample-cards",
-    "version": "0.6.5",
+    "version": "0.6.6",
     "main": [
         "px-sample-cards.html"
     ],
@@ -16,7 +16,7 @@
     ],
     "dependencies": {
         "polymer": "^1.6.1",
-        "px-theme": "~1.1.2",
+        "px-theme": "^2.0.1",
         "px-chart": "~1.7.0",
         "px-rangepicker": "~1.2.1",
         "px-widget-cards": "~2.1.0",
