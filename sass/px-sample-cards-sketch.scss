@@ -51,6 +51,7 @@ $inuit-enable-btn--primary              : true;
 
 @import "px-buttons-design/_objects.buttons.scss";
 @import "px-layout-design/_objects.layout.scss";
+@import 'px-actionable-text-icons-design/_objects.actionable.scss';
 
 $inuit-enable-toggle--large             : true;
 
@@ -65,6 +66,7 @@ $inuit-enable-toggle--large             : true;
 
 // Trumps
 $inuit-enable-margins--none             : true;
+$inuit-enable-margins--large            : true;
 $inuit-enable-margins--huge             : true;
 $inuit-enable-paddings--large           : true;
 

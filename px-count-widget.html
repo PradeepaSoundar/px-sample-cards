@@ -9,13 +9,13 @@
   <template>
     <style include="px-sample-cards-styles"></style>
     
-    <div class="flex flex--center">
-      <h1 class=u-mr++>{{cardState.count}}</h1>
-      <div class=u-ml++>
-        <button class="btn btn--primary btn--icon btn--huge" on-click="zoom">
+    <div class="flex flex--center flex--middle">
+      <span class="gamma u-mr+">{{cardState.count}}</span>
+      <!--<div class="u-ml++">-->
+        <button class="btn btn--primary btn--icon" on-click="zoom">
           <b>+</b>
         </button>
-      </div>
+      <!--</div>-->
     </div>
   </template>
 </dom-module>

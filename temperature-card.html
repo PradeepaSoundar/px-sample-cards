@@ -25,21 +25,21 @@
   <template>
     <style include="px-sample-cards-styles"></style>
     
-    <px-card header-text="Data Binding">
+    <px-card icon="fa-database" header-text="Data Binding">
       <p>
         This Fahrenheit to Celsius converter shows how you can link data between widgets within cards. This concept illustrates how making connections between components within cards can be used in industrial applications, such as multiple time series charts.
 See comments within the code for data binding instructions.
       </p>
       <div class="flex temp-box-container">
         <div class="flex__item temp--box">
-          <h1>{{fahrenheit}}<span><sup>o</sup>F</span></h1>
+          <h1 class="gamma">{{fahrenheit}}<span><sup>o</sup>F</span></h1>
           <div class="input-group">
             <input class="text-input" type="text" value="{{fahrenheit::input}}"></input>
             <button class="btn input-group__addon" type="button" on-click="fahrenheitChanged">Go</button>
           </div>
         </div>
         <div class="flex__item temp--box">
-          <h1>{{celsius}}<span><sup>o</sup>C</span></h1>
+          <h1 class="gamma">{{celsius}}<span><sup>o</sup>C</span></h1>
           <div class="input-group">
             <input class="text-input" type="text" value="{{celsius::input}}"></input>
             <button class="btn input-group__addon" type="button" on-click="celsiusChanged">Go</button>
@@ -48,10 +48,9 @@ See comments within the code for data binding instructions.
       </div>
       <div class="temp-box-container">
         <div class="more-info">
-          <h2>
-            More on Data Binding
-            <a href="https://github.com/PredixDev/px-card">View Documentation</a>
-          </h2>
+          <p>
+            More on Data Binding <a href="https://github.com/PredixDev/px-card" class="actionable"> View Documentation</a>
+          </p>
         </div>
       </div>
     </px-card>
