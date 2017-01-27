@@ -6,13 +6,22 @@
   ],
   "ignore": [
     ".*",
-    "npm-debug.log",
-    "gulpfile.js",
-    "sass",
-    "bower_components",
     "node_modules",
-    "test",
-    "OSS_Notice.pdf"
+    "bower_components",
+    "sass",
+    "HISTORY.md",
+    "CONTRIBUTING.md",
+    "OSS_Notice.pdf",
+    "scripts",
+    ".github",
+    ".editorconfig",
+    ".jshintrc",
+    ".gitignore",
+    "LICENSE.md",
+    "gulpfile.js",
+    "monogram-wdmk.png",
+    "README.md",
+    "wct.conf.json"
   ],
   "dependencies": {
     "polymer": "^1.6.1",
