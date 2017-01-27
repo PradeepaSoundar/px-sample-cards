@@ -1,3 +1,7 @@
+v0.7.4
+==================
+* Updated to px-demo-design
+
 v0.7.3
 ==================
 * Update colors design to pick up new colors
