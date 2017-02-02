@@ -1,3 +1,7 @@
+v0.7.5
+==================
+* updated .travis.yml to pass in travis without tests 
+
 v0.7.4
 ==================
 * Updated to px-demo-design
