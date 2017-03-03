@@ -6,6 +6,9 @@
   <template>
     <px-card icon="fa-table" header-text="Datagrid">
       <px-data-table filterable selectable table-data="{{data}}"></px-data-table>
+      <p>This demo will not work outside of an Angular application at this time, since the getData
+      method is only implemented for Angular $http. In an Angular application, the card can get a url from the context (this.context.url) and
+      then fetch data from that url.</p>
     </px-card>
   </template>
 </dom-module>

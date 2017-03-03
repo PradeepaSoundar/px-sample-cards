@@ -1,6 +1,10 @@
+v0.8.0
+==================
+* fixed style per design feedback
+
 v0.7.5
 ==================
-* updated .travis.yml to pass in travis without tests 
+* updated .travis.yml to pass in travis without tests
 
 v0.7.4
 ==================
