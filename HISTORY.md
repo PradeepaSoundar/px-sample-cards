@@ -1,3 +1,7 @@
+v0.8.1
+==================
+* updated with new footer
+
 v0.8.0
 ==================
 * fixed style per design feedback
